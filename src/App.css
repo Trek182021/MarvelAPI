@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  /* outline: 1px solid #f00 !important; */
+}
+
+.App {
+  background-image: url("https://images3.alphacoders.com/949/949023.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100vw;
+  max-width: 100%;
+  min-height: 100vh;
+  padding: 20px 0;
+}
+
+.dataList {
+  width: 950px;
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(255,255,255,0.25);
+  border-radius: 8px;
+  margin: 30px auto;
+}
+
+
+.table {
+  color: #ddd;
+}
+.table .thead-light th {
+  color: #ddd;
+  background-color: transparent;
+}
+
+.searchBar {
+  width: 950px;
+  background-color: rgba(255,255,255,0.33);
+  border-radius: 8px;
+  margin: 10px auto;
+  padding: 15px 10px;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.two {
+  border-radius: 0 0.25rem 0.25rem 0;
+}
+
+.one {
+  border-radius: 0;
+}
+
+.customInput {
+  width: 120px;
+  border-radius: 0 0.25rem 0.25rem 0;
+  font-size: 1rem;
+}
+
+tbody tr {
+  transition: all .4s ease-in-out;
+}
+
+.table-hover tbody tr:hover {
+  background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
+    box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+  color: white;
+}
+
+.statisticCard:hover {
+  background-color: #29323c;
+  color: white;
+}
+tr td {
+  border: none !important;
+}
+
+.searchBarTitle{
+  border-bottom-right-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  background-color: #29323c;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+}
+
+.submitFilter {
+  margin-left: 100px;
+}
+
+.filterWrapper {
+  display: flex;
+
+}
+
+.statisticWrapper {
+  display: flex;
+  gap: 30px;
+  width: 950px;
+  text-align: center;
+  color: white;
+  margin: 30px auto;
+}
+
+.statisticWrapper div {
+  background-color: rgba(255,255,255,0.33);
+  border-radius: 8px;
+  padding: 30px 8px;
+}
+
+.statisticWrapper div:not(last-child) {
+  
+}
