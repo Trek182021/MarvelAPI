@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300&display=swap');
+
 * {
   box-sizing: border-box;
   /* outline: 1px solid #f00 !important; */
+  font-family: "Poppins", "Helvetica Neue", sans-serif
 }
 
 .App {
@@ -14,13 +17,21 @@
   padding: 20px 0;
 }
 
+.app-container {
+  width: 100%;
+  padding: 0 8.75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 .dataList {
   width: 950px;
   text-align: center;
   padding: 10px;
-  background-color: rgba(255,255,255,0.25);
+  background-color: rgba(0,0,0,0.88);
   border-radius: 8px;
-  margin: 30px auto;
+  margin: 30px;
 }
 
 
@@ -33,14 +44,14 @@
 }
 
 .searchBar {
-  width: 950px;
-  background-color: rgba(255,255,255,0.33);
+  background-color: rgba(0,0,0,0.88);
   border-radius: 8px;
   margin: 10px auto;
   padding: 15px 10px;
   display: flex;
   justify-content: center;
   color: white;
+  width: 80.75%;
 }
 
 .two {
@@ -67,7 +78,7 @@ tbody tr {
   color: white;
 }
 
-.statisticCard:hover {
+.statisticCard:hover, .test-wrapper:hover, .detail-wrapper:hover {
   background-color: #29323c;
   color: white;
 }
@@ -90,24 +101,57 @@ tr td {
 
 .filterWrapper {
   display: flex;
+}
 
+.data-wrapper {
+  display: flex;
 }
 
 .statisticWrapper {
   display: flex;
   gap: 30px;
-  width: 950px;
   text-align: center;
   color: white;
   margin: 30px auto;
 }
 
 .statisticWrapper div {
-  background-color: rgba(255,255,255,0.33);
+  background-color: rgba(0,0,0,0.88);
   border-radius: 8px;
   padding: 30px 8px;
 }
 
-.statisticWrapper div:not(last-child) {
-  
+.test-wrapper {
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(0,0,0,0.88);
+  border-radius: 12px;
+  margin: 30px auto;
+  color: white;
+}
+
+.detail-wrapper {
+  text-align: center;
+  width: 30%;
+  padding: 30px;
+  background-color: rgba(0,0,0, 0.88);
+  border-radius: 12px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.detail-wrapper img {
+  width: 150px;
+}
+
+.detail-wrapper h3 {
+  font-size: 1.45em;
+}
+.test-wrapper p {
+  color:rgba(45, 54, 65, 0.75)
 }

@@ -32,6 +32,7 @@ export default function DataList({list, filterParams}) {
                         <th scope="col">Name</th>
                         <th scope="col">Number of Comics </th>
                         <th scope="col">Number of Series</th>
+                        <th scope="col">View</th>
                     </tr>
                 </thead>
                 <tbody className="thead-light">
